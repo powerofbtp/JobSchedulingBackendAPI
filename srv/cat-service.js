@@ -79,10 +79,10 @@ module.exports = cds.service.impl(async function () {
             
             var config = {
               method: 'post',
-              url: 'http://103.44.1.51:8772/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder',
+              url: 'http://<HOSTNAME>:<PORT>/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder',
               headers: { 
                 'x-csrf-token': xscrfToken, 
-                'Authorization': 'Basic cmFwNTA6YnRwMDk4', 
+                'Authorization': 'Basic *********', 
                 'Content-Type': 'application/json', 
                 'Cookie':  cookie
               },
